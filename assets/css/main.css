@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+
+html {
+    padding: 0px;
+    
+}
+
+body{
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+
+
+header > nav {
+    background: linear-gradient(180deg, black, rgba(255, 255, 255, 0));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+nav > div#logo {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 25px;
+    color: white;
+    text-shadow: 0px 1px 10px black;
+    letter-spacing: 7px;
+}
+
+nav > div#menu {
+    position: relative;
+    margin-right: 25px;
+    text-transform: uppercase;
+}
+
+nav > div#menu > a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+nav > div#menu > a:hover {
+    color: wheat;
+}
+
+.carousel-inner {
+    background-color: black;
+}
+.carousel-inner > div.info{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+}
+
+.carousel-inner #tarjeta {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.carousel-item > img {
+    height: 600px;
+    object-fit: cover;
+    opacity: 75%;
+}
+
+section#shortly-aboutme {
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 300px;
+    width: 100%;
+}
+
+
+
+section#shortly-aboutme img {
+    width: 250px;
+    border-radius: 250px;
+}
+
+section#shortly-aboutme > #info{
+    width: 60%;
+    color: white;
+
+}
+section#more-aboutme.collapsed {
+    display: none;
+}
+
+section#more-aboutme:not(.collpased){
+    background-color: rgb(30, 30, 30);
+    color: white;
+    overflow: hidden;
+}
+
+
+
+section#more-aboutme > p{
+    width: 80%;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+div.expand {
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.ExpandButton {
+    margin: 10px;
+    padding: 5px;   
+    width: 250px;
+    position: relative;
+    bottom: 0px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+section#experience {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "tittle tittle"
+                        "exp1 exp2"
+                        "exp3 exp4";
+    gap: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+
+}
+section#experience header {
+    grid-area: tittle;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+section#experience section{
+    border: 1px solid rgb(218, 218, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: max-content;
+    gap: 20px;
+    transition: 0.3s;
+}
+section#experience section:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+section#experience p{
+    color: rgb(128, 128, 128);
+}
+section#experience  section#a{
+    grid-area: exp1;
+}
+section#experience  section#b{
+    grid-area: exp2;
+}
+section#experience  section#c{
+    grid-area: exp3;
+}
+section#experience  section#d{
+    grid-area: exp4;
+}
+section#experience img {
+    width: 100px;
+    mix-blend-mode: multiply;
+}
+
+section#useful-info {
+    background-color: rgb(30, 30, 30);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    gap: 20px;
+}
+
+section#useful-info > div#info{
+    width: 40%;
+}
+
+section#useful-info > div#statistics{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    gap: 10px;
+}
+div#statistics > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+div#statistics progress{
+    accent-color: green;
+    height: 15px;
+    width: 250px;
+    border-radius: 0;
+    outline: 1px solid #ffffff67;
+    outline-offset: 3px;
+}
